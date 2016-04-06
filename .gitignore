@@ -1,0 +1,66 @@
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+Icon?
+ehthumbs.db
+Thumbs.db
+
+
+# Xcode & VIM
+*.swp
+*~.nib
+*~
+
+build/
+
+*.pbxuser
+*.perspective
+*.perspectivev3
+
+*.mode1v3
+*.mode2v3
+
+Documentation/Generated
+doxygenWarnings.txt
+xcuserdata
+
+
+# AppCode
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/dictionaries
+
+
+# golang
+# 在自己的程序里不要使用 bin 和 pkg 作为目录名
+_obj
+_test
+*.6
+*.out
+_testmain.go
+\#*
+.\#*
+*.log
+_cgo*
+*.o
+pkg/
+bin/
+
+
+# Rust
+target/
+
+
+# Node.js
+/node_modules
+
+
+# SASS, Compass
+.sass-cache
+
+
+# Bower
+/bower_components
