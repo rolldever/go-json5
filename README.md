@@ -53,10 +53,10 @@ import (
 )
 
 func main() {
+	var json5Bytes []byte = ...
+
 	// or simply `interface{}` if you know nothing about the JSON5 source
 	var obj map[string]interface{}
-
-	var json5Bytes []byte = ...
 
 	if err := json5.Unmarshal(json5Bytes, &obj); err != nil {
 		panic(err)
@@ -84,8 +84,10 @@ type SomeStruct struct {
 }
 
 func main() {
+	var json5Bytes []byte = ...
+
 	var obj SomeStruct
-	if err := json5.Unmarshal([]byte(src), &obj); err != nil {
+	if err := json5.Unmarshal(json5Bytes, &obj); err != nil {
 		panic(err)
 	}
 
